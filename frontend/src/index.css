@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* Custom Cinematic Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07090e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c2237;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2f395c;
+}
+
+/* Hide scrollbar for clean carousels while preserving touch / shift-wheel scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Cinematic Glow & Backdrop Utilities */
+.cinematic-glow {
+  box-shadow: 0 0 50px -10px rgba(139, 92, 246, 0.25);
+}
+
+.cinematic-gradient-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(7, 9, 14, 1) 0%,
+    rgba(7, 9, 14, 0.8) 25%,
+    rgba(7, 9, 14, 0.3) 65%,
+    transparent 100%
+  );
+}
+
+.cinematic-card-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(15, 18, 29, 0.7) 0%,
+    rgba(10, 13, 21, 0.95) 100%
+  );
+}
