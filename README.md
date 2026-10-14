@@ -329,7 +329,7 @@ git add .
 git commit -m "feat: complete CINEVERSE AI full-stack recommendation platform"
 
 # To push to GitHub:
-# git remote add origin https://github.com/<your-username>/cineverse-ai.git
+# git remote add origin https://github.com/yukthashreegr15ganesh-hub/Cineverse-AI.git
 # git branch -M main
 # git push -u origin main
 ```
